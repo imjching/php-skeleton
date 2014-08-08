@@ -1,0 +1,4 @@
+/vendor/
+/data/cache/*
+!/data/cache/README.md
+composer.lock

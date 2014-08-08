@@ -1,0 +1,27 @@
+{
+    "name": "imjching/php-skeleton",
+	"type": "project",
+    "description": "A Slim Framework skeleton application for rapid development",
+    "keywords": ["microframework","rest","router","mvc","application","skeleton"],
+    "homepage": "https://github.com/imJChing/php-skeleton",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "J.Ching",
+            "email": "me@imjching.com",
+            "homepage": "http://www.imjching.com/",
+			"role": "Developer"
+        }
+    ],
+	 "support": {
+        "issues": "https://github.com/imJChing/php-skeleton/issues",
+        "source": "https://github.com/imJChing/php-skeleton"
+    },
+    "require": {
+        "php": ">=5.3.0",
+        "slim/slim": "2.*",
+        "slim/views": "0.*",
+        "twig/twig": "1.*",
+		"j4mie/idiorm": "1.*"
+    }
+}
