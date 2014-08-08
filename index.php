@@ -16,14 +16,13 @@ require 'vendor/autoload.php';
 
 // load internal stuff
 require 'application/libs/controller.php';
-require 'application/libs/Twig.php';
-require 'application/libs/TwigExtension.php';
+require 'application/libs/TwigView.php';
 
 // load application class
 $app = new \Slim\Slim(array(
     'debug' 			=> true,
 	'mode'				=> 'development',
-	'templates.path' 	=> 'application/views/'
+	'templates.path' 	=> PATH_VIEWS
 ));
 
 // allow case-insensitive urls
@@ -32,7 +31,8 @@ $app->hook('slim.before.router', function () use ($app) {
 });
 
 // Prepare Twig view
-$app->view(new \Slim\Views\Twig());
+$app->view(new \Slim\Views\TwigView());
+$app->view->parserDirectory = 'vendor/twig/twig/lib/Twig';
 $app->view->parserOptions = array(
     'cache' => 'data/cache',
     'auto_reload' => true,
