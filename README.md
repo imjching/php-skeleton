@@ -1,7 +1,8 @@
 # PHP-SKELETON
 
 PHP-Skeleton is a MVC skeleton application based on Slim Framework (http://www.slimframework.com/). This project
-was inspired by **php-mvc** (https://github.com/panique/php-mvc/). PHP-Skeleton is a bundling of the following components. 
+was inspired by **php-mvc** (https://github.com/panique/php-mvc/). 
+PHP-Skeleton is a bundling of the following components. 
 
 * **Model**: idiorm ([j4mie/idiorm](https://github.com/j4mie/idiorm))
 * **View**: Twig ([fabpot/Twig](https://github.com/fabpot/Twig))
@@ -19,7 +20,7 @@ complex. This project tries to be some kind of naked skeleton bare-bone for quic
 
 * **application/** contains all files for your app: `models/`, `routers/`, `views/` (Twig templates), `libs/` (Internal libraries) and your `config/` (configuration).
 * **data/** contains data such as cache and uploads.
-* **public/** is for your assets: js/css/img/less files. It should be the only folder publicly available so your domain should point to this folder.
+* **public/** is for your assets: js/css/img files.
 * **vendor/** contains the external libraries for your application. (Used for Composer)
 
 ## Installation

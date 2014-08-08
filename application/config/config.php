@@ -25,7 +25,7 @@ define('URL', 'http://localhost/php-skeleton/');
  * Here you define where your folders are. Unless you have renamed them, there's no need to change this.
  */
 define('LIBS_PATH', 'application/libs/');
-define('CONTROLLER_PATH', 'application/controllers/');
+define('ROUTERS_PATH', 'application/routers/');
 define('MODELS_PATH', 'application/models/');
 define('VIEWS_PATH', 'application/views/');
 
